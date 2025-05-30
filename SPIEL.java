@@ -70,6 +70,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     public SPIEL ( boolean maus )
     {
         this ( 800 , 600 , maus );
+        
     }
     
     
@@ -102,6 +103,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
         } catch(Exception e){
             //e.printStackTrace();
         }
+        setzeHintergrundgrafik ("Hintergrung.jpg");
     }
     
     
@@ -120,7 +122,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
         {
             this.hintergrundbild.setzeSichtbar( false );
         }
-        this.hintergrundbild = new Figur ( "hintergrund" , pfad , 1 , 1 );
+        this.hintergrundbild = new Figur ( "hintergrund", "Hintergrung1.jpg" , 1 , 1 );
         this.hintergrundbild.setzeEbenenposition( -1 );
         this.hintergrundbild.setzeMittelpunkt( 0 , 0 );
         this.hintergrundbild.setzeSichtbar( true );
